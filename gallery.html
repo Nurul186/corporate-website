@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Awareness Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Colorful Grid Matrix for Visual Assets */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            background-color: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            border-color: #00b4d8;
+        }
+        /* Explicit placeholder style block to stand in for image links */
+        .image-placeholder {
+            width: 100%;
+            height: 160px;
+            background: linear-gradient(45deg, #1a365d, #00b4d8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+            text-align: center;
+            padding: 10px;
+        }
+        .gallery-item:nth-child(even) .image-placeholder {
+            background: linear-gradient(45deg, #7209b7, #90e0ef);
+        }
+        .gallery-desc {
+            padding: 12px;
+            font-size: 13px;
+            color: #4a5568;
+            border-top: 1px solid #edf2f7;
+            background-color: #f8fafc;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LOOB INFORMATION AWARENESS WEBSITE</h1>
+        <p>Multi-brand F&B group which originated in Malaysia.</p>
+    </header>
+
+    <nav class="topnav">
+        <a href="index.html" class="nav-logo-link active">
+        <img src="images/loob.jpeg" alt="Home" class="nav-logo-icon">
+    </a>
+        <a href="about.html">About Us</a>
+        <a href="stories.html">Success Stories</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="aboutme.html">Student Info</a>
+    </nav>
+
+<div class="slider-container">
+    <div class="slider-wrapper">
+        
+        <div class="slide">
+            <img src="images/htar.jpg" alt="Farm Fresh milk distribution in Kinta Utara" class="slide-img">
+        </div>
+
+        <div class="slide">
+            <img src="images/pol.jpg" alt="Farm Fresh distributing smartboards in Penang" class="slide-img">
+        </div>
+
+        <div class="slide">
+            <img src="images/pol1.jpg" alt="Farm Fresh school community commitment" class="slide-img">
+        </div>
+
+    </div>
+</div>
+    <footer>
+        <p>&copy; 2026 Loob Information Awareness Website. All Rights Reserved.</p>
+        <p>Optimized Browser Display: Google Chrome / Mozilla Firefox | Target Resolution: 1920x1080</p>
+    </footer>
+
+</body>
+</html>
